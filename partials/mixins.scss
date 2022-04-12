@@ -1,0 +1,55 @@
+// Clicked Background color
+@import "../partials/variables.scss";
+@mixin margins($args) {
+  margin: #{$args};
+}
+@mixin sizes($width, $height, $border-radius) {
+  width: $width;
+  height: $height;
+  border-radius: $border-radius;
+}
+@mixin position1($position, $bottom, $left) {
+  position: $position;
+  bottom: $bottom;
+  left: $left;
+}
+@mixin grid($grid_type, $args) {
+  display: $grid_type;
+  grid-template-columns: $args;
+}
+@mixin backgroundHoverColor {
+  background: rgb(247, 226, 6);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 226, 6, 1) 0%,
+    rgba(233, 144, 4, 1) 100%
+  );
+}
+
+@mixin backgroundClickedColor {
+  background: rgb(211, 133, 3);
+  background: linear-gradient(
+    180deg,
+    rgba(211, 133, 3, 1) 0%,
+    rgba(252, 243, 6, 1) 100%
+  );
+}
+
+@mixin setContainer($height, $margin-top, $border-radius) {
+  height: $height;
+  margin-top: $margin-top;
+  border-radius: $border-radius;
+}
+
+@mixin backgroundDisabledColor {
+  background-color: #9c5000;
+}
+
+@mixin betBtn {
+  @include sizes(43.5px, 43.5px, 50%);
+  background-color: $color7;
+}
+
+@mixin infoBtn {
+  @include sizes(50px, 50px, 50%);
+}

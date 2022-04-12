@@ -1,0 +1,252 @@
+body {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
+  background-color: #6a3505;
+}
+
+.bottom_bar {
+  position: absolute;
+  bottom: 20%;
+  left: 12%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bottom_bar .info_container {
+  max-width: 1122px;
+  height: 500px;
+}
+
+.bottom_bar .bottom_bar_overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 87px;
+  background-color: rgba(0, 0, 0, 0);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.bottom_bar .total_bet_buttons {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1fr;
+}
+
+.bottom_bar .spins_buttons {
+  display: grid;
+  grid-template-columns: 0.8fr 1.7fr 1.5fr;
+}
+
+.bottom_bar .info_btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  background-color: #a05600;
+  border: 6px solid #331900;
+}
+
+.bottom_bar .info_btn:hover {
+  background: #d38503;
+  background: linear-gradient(180deg, #d38503 0%, #fcf306 100%);
+}
+
+.bottom_bar .bets_box {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 0.8fr;
+  height: 50px;
+  margin-top: 25px;
+  border-radius: 25px;
+  background-color: #000000;
+}
+
+.bottom_bar .bets_box .minus_btn {
+  width: 43.5px;
+  height: 43.5px;
+  border-radius: 50%;
+  background-color: #a05600;
+  border: none;
+  display: inline-block;
+  margin: 2px 0 0 5px;
+}
+
+.bottom_bar .bets_box .minus_btn:hover {
+  background: #d38503;
+  background: linear-gradient(180deg, #d38503 0%, #fcf306 100%);
+}
+
+.bottom_bar .bets_box .plus_btn {
+  width: 43.5px;
+  height: 43.5px;
+  border-radius: 50%;
+  background-color: #a05600;
+  border: none;
+  display: inline-block;
+  margin: 2px 5px 0 0;
+}
+
+.bottom_bar .bets_box .plus_btn:hover {
+  background: #d38503;
+  background: linear-gradient(180deg, #d38503 0%, #fcf306 100%);
+}
+
+.bottom_bar .bets_box .text_area {
+  font-size: 13px;
+  color: #ff6972;
+  display: inline-block;
+}
+
+.bottom_bar .bets_box .text_area2 {
+  font-size: 21px;
+  color: #e9bb00;
+  display: inline-block;
+}
+
+.bottom_bar .coins_pannel {
+  height: 50px;
+  margin: 25px 0 0 2px;
+  background-color: #000000;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.bottom_bar .coins_pannel .coins {
+  font-size: 13px;
+  color: #ff6972;
+}
+
+.bottom_bar .coins_pannel .coins_amount {
+  font-size: 13px;
+  color: #e9bb00;
+}
+
+.bottom_bar .GoodLuck_pannel {
+  background-color: #000000;
+  text-align: center;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-width: 10px;
+  border-style: solid;
+  background: linear-gradient(#000000, #000000) padding-box, linear-gradient(45deg, #f19e00 0%, #ba3700 100%);
+  border-color: transparent;
+}
+
+.bottom_bar .GoodLuck_pannel .pannel_msg {
+  display: inline-block;
+  font-size: 48px;
+  color: #ffe400;
+  z-index: 2;
+}
+
+.bottom_bar .turbo_box {
+  position: relative;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 25px;
+  background-color: #0c4206;
+  box-shadow: 0 0 0 2px #733800;
+  z-index: 0;
+}
+
+.bottom_bar .turbo_box .turbo_btn {
+  margin-left: 3.5px;
+  font-size: 15px;
+  box-shadow: 0 0 0 4px #000000;
+  color: #793d01;
+  background-color: #eb9700;
+  border-radius: 25px;
+  font-weight: bold;
+  border-color: transparent;
+}
+
+.bottom_bar .turbo_box .turbo_btn:hover {
+  background: #d38503;
+  background: linear-gradient(180deg, #d38503 0%, #fcf306 100%);
+}
+
+.bottom_bar .select_spins {
+  position: relative;
+  background-color: #eb9700;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 20px;
+  margin-left: 5px;
+  box-shadow: 0 0 0 5px #733800;
+}
+
+.bottom_bar .select_spins .dropBtn {
+  width: 75%;
+  height: 40px;
+  font-size: 21px;
+  border-radius: 20px;
+  font-weight: bold;
+  color: #793d01;
+  background-color: #eb9700;
+  border-color: transparent;
+}
+
+.bottom_bar .select_spins .dropBtn:hover {
+  background: #d38503;
+  background: linear-gradient(180deg, #d38503 0%, #fcf306 100%);
+}
+
+.bottom_bar .select_spins .dropdown_content {
+  background-color: #000000;
+  border-radius: 15px;
+  border: 3px solid #a85400;
+  box-shadow: 0px 0px 3px #703600;
+  position: absolute;
+  z-index: 1;
+  width: 150px;
+  text-align: left;
+  bottom: 100%;
+}
+
+.bottom_bar .select_spins .dropdown_content a {
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  color: #e4aa02;
+}
+
+.auto_spun_btn_overlay {
+  position: absolute;
+  bottom: 15%;
+  right: 18.2%;
+  z-index: 2;
+}
+
+.auto_spun_btn_overlay .auto_overlay_btn {
+  position: absolute;
+  right: 10%;
+  top: 15%;
+  background: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.auto_animation {
+  animation: rotation 2s forwards;
+}
+
+.btn_move_down {
+  position: absolute;
+  bottom: 0;
+}
