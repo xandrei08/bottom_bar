@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottom Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="bottom_bar">
+      <img src="./assets/background-image.png" alt="bottom_bar" />
+      <div class="bottom_bar_overlay">
+        <div class="total_bet_buttons">
+          <div class="info_box">
+            <button class="info_btn" onclick="play()">
+              <img src="./assets/info_sign.png" alt="Info Button" />
+            </button>
+          </div>
+          <div class="bets_box">
+            <div class="decrease_bet">
+              <button class="minus_btn" onclick="play()">
+                <img src="./assets/minus_sign.png" alt="Decrease bet" />
+              </button>
+            </div>
+            <div class="show_bet">
+              <span class="text_area">TOTAL BET</span><br />
+              <span class="text_area2"
+                ><i class="fa-solid fa-yen-sign"></i>0.15</span
+              >
+            </div>
+            <div class="increase_bet">
+              <button class="plus_btn" onclick="play()">
+                <img src="./assets/plus_sign.png" alt="Increase bet" />
+              </button>
+            </div>
+          </div>
+          <div class="coins_pannel">
+            <span class="coins">COIN</span><br />
+            <span class="coins_amount"
+              ><i class="fa-solid fa-yen-sign"></i>5689</span
+            >
+          </div>
+        </div>
+        <div class="GoodLuck_pannel">
+          <span class="pannel_msg">GOOD LUCK!</span>
+        </div>
+        <div class="spins_buttons">
+          <div class="turbo_box">
+            <button class="turbo_btn" onclick="play()">TURBO</button>
+          </div>
+          <div class="select_spins">
+            <button class="dropBtn" onclick="play()">AUTO</button>
+            <div class="dropdown-content">
+              <a class="spins_25" href="#">UNTIL FEATURE</a><br />
+              <a class="spins_25" href="#">25 SPINS</a><br />
+              <a class="spins_25" href="#">20 SPINS</a><br />
+              <a class="spins_25" href="#">15 SPINS</a><br />
+              <a class="spins_25" href="#">10 SPINS</a><br />
+              <a class="spins_25" href="#">5 SPINS</a><br />
+            </div>
+          </div>
+          <div class="auto_spin_btn"></div>
+        </div>
+      </div>
+    </div>
+    <div class="auto_spun_btn_overlay">
+      <img src="./assets/btn_auto.png" alt="Auto Spin Button" />
+      <button class="auto_overlay_btn" onclick="play()">
+        <img src="./assets/spin_sign.png" alt="" />
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
